@@ -1,0 +1,120 @@
+.home-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    .home-presentation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 87.8vh;
+        padding: 0 0 0 10%;
+
+        .titles {
+            letter-spacing: 2px;
+            font-size: 42px;
+            font-weight: 600;
+            color: #E51D37;
+        }
+
+        .slogan {
+            margin: 12px 0 42px 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .new-account {
+            display: flex;
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 14px 25px;
+                border-radius: 4px;
+                border: none;
+                font-size: 18px;
+                background: linear-gradient(221deg, #EB3850 14.43%, #CB162E 85.28%);
+                color: #FFF;
+
+                .icon-button {
+                    margin: -2px 0 0 10px;
+                }
+            }
+        }
+    }
+
+    .home-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        perspective: 1000px;
+        background: linear-gradient(221deg, #EB3850 14.43%, #CB162E 85.28%);
+
+        .card {
+            position: relative;
+            z-index: 10;
+            top: -20px;
+            left: 70px;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 170px;
+            padding: 20px;
+            color: #FFF;
+            border-radius: 8px;
+            background: #a21125;
+            border: 1px solid #931122;
+            transform: rotateY(-14deg) rotateX(10deg);
+            transition: all 600ms;
+
+            .card-logo {
+                display: flex;
+                justify-content: space-between;
+                
+                h4 {
+                    letter-spacing: 2px;
+                }
+
+                .mastercard-logo {
+                    width: 54px;
+                    height: 54px;
+                    transform: rotate(20deg) translateY(-13px);
+                }
+            }
+            
+            .chip-card {
+                margin: -10px 0 20px 0;
+                transform: rotate(20deg) skew(2deg);
+            }
+        }
+        
+        .two-card {
+            position: relative;
+            top: 25px;
+            width: 300px;
+            height: 170px; 
+            padding: 20px 0;
+            color: #FFF;
+            border-radius: 8px;
+            background: #a21125;
+            transform: rotateY(18deg) rotateX(23deg);
+            
+            .faixa {
+                position: relative;
+                top: 2x0px;
+                width: 100%;
+                height: 30px;
+                background-color: #FFF;
+            }
+
+            span {
+                position: relative;
+                top: 70px;
+                right: -210px;
+            }
+        }
+    }
+}
