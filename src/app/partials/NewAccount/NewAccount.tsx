@@ -1,11 +1,28 @@
+import Image from 'next/image';
+
+import { 
+    DollarSignIcon, 
+    SmartphoneIcon,
+    SmileIcon 
+} from 'lucide-react';
+
+import './NewAccount.scss';
+
+import UnDrawApp from '@/app/assets/undraw_app.png';
+
 export const NewAccount = () => {
     return (
         <section className='new-account-section'>
-            <article>
+            <article className='smartphone-section'>
+                <Image
+                    alt=''
+                    src={UnDrawApp} 
+                    className='smartphone-image'
+                />
             </article>
 
-            <article>
-                <div>
+            <article className="new-account-partial">
+                <div className='titles'>
                     <h1>
                         Abra a sua conta 
                         <span>
@@ -19,12 +36,15 @@ export const NewAccount = () => {
                     </p>
                 </div>
 
-                <div>
-                    <div>
-
+                <div className='benefits'>
+                    <div className='icon'>
+                        <DollarSignIcon
+                            size={35} 
+                            color='#EB3850'
+                        />
                     </div>
 
-                    <div>
+                    <div className='benefits-description'>
                         <h2>
                             Conta digital 100% grátis
                         </h2>
@@ -35,28 +55,34 @@ export const NewAccount = () => {
                     </div>
                 </div>
 
-                <div>
-                    <div>
-
+                <div className='benefits'>
+                    <div className='icon'>
+                        <SmartphoneIcon
+                            size={35} 
+                            color='#EB3850'
+                        />
                     </div>
 
-                    <div>
+                    <div className='benefits-description'>
                         <h2>
                             Seu dinheiro rendendo mais
                         </h2>
 
                         <p>
-                            Rendem mais que a poupança e você resgata quando quiser
+                            Transferências, boletos de depósito e outros serviços gratuitos
                         </p>
                     </div>
                 </div>
 
-                <div>
-                    <div>
-
+                <div className='benefits'>
+                    <div className='icon'>
+                        <SmileIcon
+                            size={35} 
+                            color='#EB3850'
+                        />
                     </div>
 
-                    <div>
+                    <div className='benefits-description'>
                         <h2>
                             Cartão sem anuidade
                         </h2>
